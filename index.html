@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EN2RIOR. — Design Your Dreams</title>
+<meta name="description" content="We specialize in creating timeless interiors that blends functionally with aesthetic beauty." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<!-- Sticky nav (13:4). Lives outside .page: .page is a size container, which would trap position:fixed. -->
+<div class="head-wrap" id="headWrap">
+  <header class="site-head">
+    <a class="logo" href="#top" aria-label="EN2RIOR home">EN<span>2</span>RIOR.</a>
+    <nav class="head-nav" id="headNav" aria-label="Primary">
+      <a href="#about">ABOUT</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#gallery">STORIES</a>
+      <a class="head-nav-contact" href="#contact">CONTACT</a>
+    </nav>
+    <a class="head-contact" href="#contact">CONTACT</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="headNav"><span></span><span></span></button>
+  </header>
+</div>
+
+<div class="page">
+
+  <!-- ============ HERO (13:3 / 13:49 / 13:11 / 13:12 / 13:16) ============ -->
+  <section class="hero" id="top">
+
+    <h1 class="hero-title" aria-label="Design your dreams">
+      <span class="hero-line">DESIGN YOUR</span>
+      <span class="hero-line">DREAMS</span>
+    </h1>
+
+    <div class="hero-media">
+      <div class="hero-img hero-img--mid crop" data-node="13:12">
+        <img src="assets/images/hero-living-leather-sofa.jpg" alt="Living room with dark leather sofa and arched wooden screens" style="left:.24%;top:-17.76%;width:99.51%;height:140%" />
+      </div>
+      <div class="hero-img hero-img--right crop" data-node="13:11">
+        <img class="cover" src="assets/images/hero-cafe-planter-chandelier.jpg" alt="Cafe interior with round table and hanging planter chandelier" />
+      </div>
+    </div>
+
+    <div class="hero-copy">
+      <p>We specialize in creating timeless interiors that blends functionally with aesthetic beauty. Whether it’s a cozy home,<br class="br-lg" /> a dynamic office, or a luxurious commercial space.</p>
+      <a class="btn" href="#contact">LET’S TALK <img src="assets/icons/arrow-up-right-white.svg" width="24" height="24" alt="" /></a>
+    </div>
+  </section>
+
+  <!-- ============ WHO WE ARE (56:2) ============ -->
+  <section class="section who" id="about">
+    <div class="sec-head" data-reveal>
+      <p class="label"><img src="assets/icons/dot-ink.svg" width="6" height="6" alt="" />WHO WE ARE</p>
+      <h2 class="sec-title sec-title--nudge">We Design And Build</h2>
+      <p class="sec-sub">design your imagination that meant to outlive the present</p>
+    </div>
+    <div class="who-grid">
+      <div class="who-left">
+        <div class="who-img-sm crop reveal-img" data-reveal>
+          <img src="assets/images/who-lounge-rattan.jpg" alt="Lounge with rattan table and tall windows" style="left:-1.57%;top:-6.89%;width:103.14%;height:107%" />
+        </div>
+        <button class="watch" type="button" id="watchBtn" data-video="gXcapkDd_j4" aria-haspopup="dialog" aria-controls="videoModal" data-reveal>
+          <span class="watch-icon" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.8333 25.9733V14.0267C15.8336 13.8772 15.874 13.7305 15.9504 13.6021C16.0268 13.4736 16.1364 13.368 16.2676 13.2965C16.3988 13.2249 16.5469 13.1899 16.6963 13.1952C16.8457 13.2006 16.9909 13.246 17.1167 13.3267L26.41 19.2983C26.5277 19.3737 26.6245 19.4775 26.6916 19.6001C26.7586 19.7227 26.7938 19.8602 26.7938 20C26.7938 20.1398 26.7586 20.2773 26.6916 20.3999C26.6245 20.5225 26.5277 20.6263 26.41 20.7017L17.1167 26.675C16.9909 26.7557 16.8457 26.8011 16.6963 26.8064C16.5469 26.8117 16.3988 26.7768 16.2676 26.7052C16.1364 26.6336 16.0268 26.5281 15.9504 26.3996C15.874 26.2711 15.8336 26.1245 15.8333 25.975V25.9733Z" fill="currentColor"/><path d="M1.66667 20C1.66667 9.875 9.875 1.66667 20 1.66667C30.125 1.66667 38.3333 9.875 38.3333 20C38.3333 30.125 30.125 38.3333 20 38.3333C9.875 38.3333 1.66667 30.125 1.66667 20ZM20 4.16667C15.8007 4.16667 11.7735 5.83482 8.80414 8.80414C5.83482 11.7735 4.16667 15.8007 4.16667 20C4.16667 24.1993 5.83482 28.2265 8.80414 31.1959C11.7735 34.1652 15.8007 35.8333 20 35.8333C24.1993 35.8333 28.2265 34.1652 31.1959 31.1959C34.1652 28.2265 35.8333 24.1993 35.8333 20C35.8333 15.8007 34.1652 11.7735 31.1959 8.80414C28.2265 5.83482 24.1993 4.16667 20 4.16667Z" fill="currentColor"/></svg></span>
+          <span class="watch-label">Watch Video</span>
+        </button>
+      </div>
+      <div class="who-right">
+        <div class="who-text" data-reveal>
+          <p>At 2RIOR, we believe interior design is more than just aesthetics; it's about crafting environments that resonate with your soul. Our team of dedicated designers, led by visionaries like Anya Petrova and Kai Sato, are experts at transforming ordinary spaces into extraordinary experiences.</p>
+          <p>We delve deep into understanding your lifestyle, preferences, and aspirations, ensuring every detail reflects your unique identity. From the initial concept to the final installation, we meticulously curate every element, from the selection of sustainable materials to the placement of bespoke furnishings.</p>
+        </div>
+        <div class="who-img-lg crop reveal-img" data-reveal>
+          <img src="assets/images/who-living-rust-wall.jpg" alt="Living room with rust wall, cream sofa and lounge chair" style="left:-1.11%;top:-15.76%;width:102.22%;height:120%" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS (52:851) ============ -->
+  <section class="projects" id="projects">
+    <div class="projects-inner">
+      <div class="proj-head" data-reveal>
+        <p class="label label--light"><img src="assets/icons/dot-cream.svg" width="6" height="6" alt="" />PROJECTS</p>
+        <h2 class="proj-title">Projects We’ve Done</h2>
+        <p class="proj-sub">for our clients successfully and profoundly</p>
+        <div class="proj-nav">
+          <button class="arrow" type="button" id="projPrev" aria-label="Previous project"><img src="assets/icons/arrow-left-cream.svg" width="24" height="24" alt="" /></button>
+          <button class="arrow" type="button" id="projNext" aria-label="Next project"><img src="assets/icons/arrow-right-cream.svg" width="24" height="24" alt="" /></button>
+        </div>
+      </div>
+      <div class="proj-viewport" id="projViewport" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Projects — drag or use the arrows" data-reveal>
+        <article class="proj-card" aria-roledescription="slide" aria-label="1 of 6">
+          <div class="proj-img"><img src="assets/images/project-rustic-charm.jpg" alt="Yellow loveseat by a large window" style="object-position:50% 39%" draggable="false" /></div>
+          <div class="proj-cap">
+            <h3>01. Rustic Charm Creations</h3>
+            <p><em>- Michael Johnson</em></p>
+          </div>
+        </article>
+        <article class="proj-card" aria-roledescription="slide" aria-label="2 of 6">
+          <div class="proj-img"><img src="assets/images/project-luxe-loft.jpg" alt="Wooden bar stools against a herringbone brick wall" style="object-position:50% 73%" draggable="false" /></div>
+          <div class="proj-cap">
+            <h3>02. Luxe Loft Designs</h3>
+            <p>- <em>Arnold Young</em></p>
+          </div>
+        </article>
+        <article class="proj-card" aria-roledescription="slide" aria-label="3 of 6">
+          <div class="proj-img"><img src="assets/images/project-modern-minimalist.jpg" alt="Bright living room with rattan cabinet and log coffee table" style="object-position:50% 53%" draggable="false" /></div>
+          <div class="proj-cap">
+            <h3>03. Modern Minimalist Interiors</h3>
+            <p><em>- Sarah Lee</em></p>
+          </div>
+        </article>
+        <article class="proj-card" aria-roledescription="slide" aria-label="4 of 6">
+          <div class="proj-img"><img src="assets/images/collage-home-office.jpg" alt="Wood-panelled home office with abstract art" style="object-position:50% 50%" draggable="false" /></div>
+          <div class="proj-cap">
+            <h3>04. Warm Timber Studio</h3>
+            <p><em>- David Kim</em></p>
+          </div>
+        </article>
+        <article class="proj-card" aria-roledescription="slide" aria-label="5 of 6">
+          <div class="proj-img"><img src="assets/images/collage-boardroom-wood-slats.jpg" alt="Meeting room with wood slat ceiling and marble table" style="object-position:42% 50%" draggable="false" /></div>
+          <div class="proj-cap">
+            <h3>05. Executive Oak Boardroom</h3>
+            <p><em>- Laura Chen</em></p>
+          </div>
+        </article>
+        <article class="proj-card" aria-roledescription="slide" aria-label="6 of 6">
+          <div class="proj-img"><img src="assets/images/provide-cafe-spindle-chairs.jpg" alt="Cafe with black spindle chairs and wicker pendant lamps" style="object-position:50% 60%" draggable="false" /></div>
+          <div class="proj-cap">
+            <h3>06. Café Bloom Interiors</h3>
+            <p><em>- Ethan Brooks</em></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT WE PROVIDE (56:3) ============ -->
+  <section class="section provide" id="services">
+    <div class="sec-head" data-reveal>
+      <p class="label"><img src="assets/icons/dot-ink.svg" width="6" height="6" alt="" />WHAT WE PROVIDE</p>
+      <h2 class="sec-title">We Design And Build</h2>
+      <p class="sec-sub">design your imagination that meant to outlive the present</p>
+    </div>
+    <div class="provide-grid">
+      <div class="provide-left">
+        <ul class="svc-list" id="svcList">
+          <li class="is-active" data-reveal><button type="button" data-svc="0" aria-pressed="true" aria-controls="svcDesc svcMedia"><span>Contemporary Chic</span></button></li>
+          <li data-reveal style="--d:0.05s"><button type="button" data-svc="1" aria-pressed="false" aria-controls="svcDesc svcMedia"><span>Minimalist Elegance</span></button></li>
+          <li data-reveal style="--d:0.10s"><button type="button" data-svc="2" aria-pressed="false" aria-controls="svcDesc svcMedia"><span>Rustic Charm</span></button></li>
+          <li data-reveal style="--d:0.15s"><button type="button" data-svc="3" aria-pressed="false" aria-controls="svcDesc svcMedia"><span>Modern Industrial</span></button></li>
+          <li data-reveal style="--d:0.20s"><button type="button" data-svc="4" aria-pressed="false" aria-controls="svcDesc svcMedia"><span>Bohemian Vibes</span></button></li>
+          <li data-reveal style="--d:0.25s"><button type="button" data-svc="5" aria-pressed="false" aria-controls="svcDesc svcMedia"><span>Classic Vintage</span></button></li>
+        </ul>
+        <div class="provide-copy" data-reveal>
+          <p id="svcDesc" aria-live="polite">Our goal is to create spaces that not only inspire and delight but also enhance your well-being and productivity. Let 2RIOR be your partner in shaping the spaces where life's most cherished memories are made.</p>
+          <a class="btn" href="#contact">LET’S TALK <img src="assets/icons/arrow-up-right-white.svg" width="24" height="24" alt="" /></a>
+        </div>
+      </div>
+      <div class="provide-img crop reveal-img" id="svcMedia" data-reveal>
+        <img class="svc-layer is-shown" src="assets/images/provide-cafe-spindle-chairs.jpg" alt="Cafe with black spindle chairs and wicker pendant lamps" style="object-position:50% 100%" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW WE WORK (59:7) ============ -->
+  <section class="section process" id="process">
+    <div class="sec-head" data-reveal>
+      <p class="label"><img src="assets/icons/dot-ink.svg" width="6" height="6" alt="" />HOW WE WORK</p>
+      <h2 class="sec-title sec-title--nudge sec-title--nowrap">OUR working procedures</h2>
+      <p class="sec-sub">that we follow to bring idea into real life</p>
+    </div>
+    <div class="steps">
+      <div class="step" data-reveal><div class="step-no"><span>STEP</span><strong>01</strong></div><h3>Consultation &amp; Discovery</h3></div>
+      <div class="step" data-reveal style="--d:.08s"><div class="step-no"><span>STEP</span><strong>02</strong></div><h3>Concept Development</h3></div>
+      <div class="step" data-reveal style="--d:.16s"><div class="step-no"><span>STEP</span><strong>03</strong></div><h3>Space Planning</h3></div>
+      <div class="step-img crop reveal-img" data-reveal style="--d:.24s">
+        <img src="assets/images/process-living-curved-sofa.jpg" alt="Living room with curved sofa and chandelier" style="left:-.15%;top:-1.55%;width:142.22%;height:101.55%" />
+      </div>
+      <div class="step-img crop reveal-img" data-reveal>
+        <img src="assets/images/process-grid-wall-armchairs.jpg" alt="Leather armchairs against a grid wall with ivy" style="left:-.25%;top:-42.05%;width:100.49%;height:142%" />
+      </div>
+      <div class="step" data-reveal style="--d:.08s"><div class="step-no"><span>STEP</span><strong>04</strong></div><h3>Design Development</h3></div>
+      <div class="step" data-reveal style="--d:.16s"><div class="step-no"><span>STEP</span><strong>05</strong></div><h3>Sourcing &amp; Procurement</h3></div>
+      <div class="step" data-reveal style="--d:.24s"><div class="step-no"><span>STEP</span><strong>06</strong></div><h3>Installation &amp; Styling</h3></div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY CORNER (13:144) ============ -->
+  <section class="gallery" id="gallery">
+    <h2 class="gallery-title" data-reveal><span>GALLERY</span><span>CORNER</span></h2>
+    <!-- Deck: drag the top card away → it tucks to the back; click it → full view. Slots are set by JS. -->
+    <div class="gallery-stack" id="galleryStack" role="group" aria-roledescription="image deck" aria-label="Gallery — drag the top image to see the next one, click to view full size">
+      <div class="g-card" data-i="0"><img class="g-img" src="assets/images/gallery-timber-glass-wall.jpg" alt="Armchair and table beside a tall timber-framed glass wall" draggable="false" /><i class="g-glass"></i></div>
+      <div class="g-card" data-i="1"><img class="g-img" src="assets/images/who-living-rust-wall.jpg" alt="Living room with rust wall, cream sofa and sculptural lounge chair" draggable="false" /><i class="g-glass"></i></div>
+      <div class="g-card" data-i="2"><img class="g-img" src="assets/images/who-lounge-rattan.jpg" alt="Lounge with rattan furniture, plants and tall windows" draggable="false" /><i class="g-glass"></i></div>
+      <div class="g-card" data-i="3"><img class="g-img" src="assets/images/hero-cafe-planter-chandelier.jpg" alt="Cafe interior with round table and hanging planter chandelier" draggable="false" loading="lazy" /><i class="g-glass"></i></div>
+      <div class="g-card" data-i="4"><img class="g-img" src="assets/images/process-living-curved-sofa.jpg" alt="Living room with curved sofa and statement chandelier" draggable="false" loading="lazy" /><i class="g-glass"></i></div>
+      <div class="g-card" data-i="5"><img class="g-img" src="assets/images/collage-sunlit-living.jpg" alt="Sunlit living room with a cream sofa" draggable="false" loading="lazy" /><i class="g-glass"></i></div>
+      <div class="g-card" data-i="6"><img class="g-img" src="assets/images/project-luxe-loft.jpg" alt="Wooden bar stools against a herringbone brick wall" draggable="false" loading="lazy" /><i class="g-glass"></i></div>
+      <div class="g-card" data-i="7"><img class="g-img" src="assets/images/collage-boardroom-wood-slats.jpg" alt="Meeting room with wood slat ceiling and marble table" draggable="false" loading="lazy" /><i class="g-glass"></i></div>
+    </div>
+  </section>
+
+  <!-- ============ COLLAGE + BOOK (13:109 / 13:110 / 13:111 / 13:156) ============ -->
+  <section class="collage-sec" aria-label="Featured interiors">
+    <div class="collage">
+      <div class="col-img col-a crop reveal-img" data-reveal>
+        <img src="assets/images/collage-boardroom-wood-slats.jpg" alt="Meeting room with wood slat ceiling and marble table" style="left:-14.92%;top:0;width:150%;height:100%" />
+      </div>
+      <div class="col-img col-b crop reveal-img" data-reveal>
+        <img src="assets/images/collage-home-office.jpg" alt="Wood-panelled home office with abstract art" style="left:-29.01%;top:0;width:150%;height:100%" />
+      </div>
+      <div class="col-img col-c crop reveal-img" data-reveal data-parallax="0.1" style="--d:.15s">
+        <img class="cover" src="assets/images/collage-sunlit-living.jpg" alt="Sunlit living room with cream sofa" />
+      </div>
+      <a class="book" href="mailto:demo@in2rior.gamil.com?subject=Book%20an%20appointment" data-reveal style="--d:.2s">
+        <span>BOOK AN APPOINTMENT</span>
+        <img src="assets/icons/arrow-up-right-white.svg" width="24" height="24" alt="" />
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ CTA + FOOTER ============ -->
+  <section class="cta" id="contact">
+    <p class="cta-1" data-words>We’re always excited to hear</p>
+    <p class="cta-2" data-words>from people who believe in what they want to create. <span>start your dream journey</span></p>
+  </section>
+
+  <footer class="footer">
+    <div class="foot-cols">
+      <div class="foot-col" data-reveal>
+        <p>USA</p>
+        <p id="clock">16:40:56</p>
+        <p>(GMT +0)</p>
+      </div>
+      <nav class="foot-col" data-reveal style="--d:.06s" aria-label="Footer">
+        <a href="#about">ABOUT</a>
+        <a href="#process">PROCESS</a>
+        <a href="#projects">PROJECTS</a>
+      </nav>
+      <div class="foot-col foot-col--up" data-reveal style="--d:.12s">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://medium.com/" target="_blank" rel="noopener">Medium</a>
+      </div>
+      <div class="foot-col" data-reveal style="--d:.18s">
+        <p class="up">contact</p>
+        <a href="mailto:demo@in2rior.gamil.com">demo@in2rior.gamil.com</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 in2rior</p>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms &amp; Condition</a>
+      <a href="#">Cache &amp; Cookies Settings</a>
+    </div>
+    <div class="brand" aria-hidden="true">
+      <p class="brand-word">EN<span>2</span>RIOR</p>
+      <i class="brand-fade"></i>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Video lightbox (Who We Are → Watch Video). iframe is injected on open, removed on close. -->
+<div class="vmodal" id="videoModal" role="dialog" aria-modal="true" aria-label="EN2RIOR video" hidden>
+  <div class="vmodal-backdrop" data-close></div>
+  <div class="vmodal-box">
+    <button class="vmodal-close" type="button" aria-label="Close video" data-close><span></span><span></span></button>
+    <div class="vmodal-frame" id="videoFrame"></div>
+  </div>
+</div>
+<!-- Gallery lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery image viewer" hidden>
+  <div class="lb-backdrop" data-lb-close></div>
+  <div class="lb-stage" id="lbStage"></div>
+  <button class="lb-arrow lb-prev" id="lbPrev" type="button" aria-label="Previous image"><img src="assets/icons/arrow-left-cream.svg" width="24" height="24" alt="" /></button>
+  <button class="lb-arrow lb-next" id="lbNext" type="button" aria-label="Next image"><img src="assets/icons/arrow-right-cream.svg" width="24" height="24" alt="" /></button>
+  <button class="lb-close" type="button" aria-label="Close image viewer" data-lb-close><span></span><span></span></button>
+  <p class="lb-count" aria-live="polite"><span id="lbIdx">1</span> / <span id="lbTotal">8</span></p>
+</div>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
