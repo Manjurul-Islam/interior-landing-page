@@ -17,9 +17,32 @@ python3 -m http.server 8811
 
 Opening `index.html` directly from the file system also works, but the YouTube embed needs to be served over `http(s)`.
 
-### Deploy
+### Deploy to Vercel
 
-Push to GitHub and enable **Settings → Pages → Deploy from branch → `main` / root**. No build configuration is needed.
+The repo is a zero-build static site; `vercel.json` sets everything Vercel needs (no framework, no build/install step, clean URLs, cache and security headers).
+
+**Option A: from GitHub (recommended, auto-deploys on every push)**
+1. Push this repo to GitHub.
+2. In Vercel: **Add New → Project → Import** the repository.
+3. Leave the defaults (*Framework Preset: Other*, no build command, root directory `./`) and click **Deploy**.
+
+**Option B: from the terminal**
+```bash
+npx vercel          # preview deployment (first run asks you to log in and link the project)
+npx vercel --prod   # production deployment
+```
+
+| File | Purpose |
+|---|---|
+| `vercel.json` | static config: `cleanUrls`, security headers, 7-day cache for images/icons, always-revalidate for CSS/JS |
+| `.vercelignore` | keeps `README.md` / `.gitignore` out of the deployment |
+| `favicon.svg` | site icon |
+
+> CSS/JS filenames are not content-hashed, so they are served with `must-revalidate`; a new deploy is picked up immediately. If you replace an image, give it a new filename (images are cached for 7 days).
+
+### Deploy to GitHub Pages
+
+**Settings → Pages → Deploy from branch → `main` / root** also works; no build configuration is needed.
 
 ---
 
@@ -34,6 +57,9 @@ en2rior-landing/
 │   ├── images/                # 14 photos (JPEG)
 │   └── icons/                 # 5 SVG icons
 ├── README.md
+├── vercel.json                # Vercel static-hosting config
+├── .vercelignore
+├── favicon.svg
 └── .gitignore
 ```
 
