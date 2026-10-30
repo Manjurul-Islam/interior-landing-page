@@ -2,6 +2,8 @@
 
 A responsive, animated landing page for **EN2RIOR**, an interior-design studio, built from the Figma artboard *Interior Design Landing Page* (node `13:2`, 1440 × 9428).
 
+**Live:** https://en2rior-landing.vercel.app
+
 Plain **HTML + CSS + vanilla JavaScript**: no framework, no build step, no dependencies.
 
 ---
